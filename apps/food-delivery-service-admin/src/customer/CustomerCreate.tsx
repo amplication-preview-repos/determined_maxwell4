@@ -1,0 +1,17 @@
+import * as React from "react";
+import { Create, SimpleForm, CreateProps, NumberInput } from "react-admin";
+
+export const CustomerCreate = (props: CreateProps): React.ReactElement => {
+  return (
+    <Create {...props}>
+      <SimpleForm>
+        <NumberInput step={1} label="customerId" source="customerId" />
+        <div />
+        <NumberInput step={1} label="loyaltyPoints" source="loyaltyPoints" />
+        <div />
+        <div />
+        <NumberInput step={1} label="userId" source="userId" />
+      </SimpleForm>
+    </Create>
+  );
+};
